@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    font-size: 11px;
+    background-color: #131313;
+}
+
+.header__container {
+    height: 83px;
+    width: 1276px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: #E3B873;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.menu {
+    padding: 0;
+    display: flex; 
+    gap: 47px;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__links {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.menu__links_active {
+    color: #E3B873;
+}
+
+.header__tel {
+    color: #E3B873;
+}
+
+.btn {
+    border: none;
+    background-color: #E3B873;
+    color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.header__btn {
+    font-style: italic;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    padding: 13px 33px;
+}
+
+.top {
+    height: calc(100vh - 83px);
+    background-image: url(../img/image\ 4.3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    color: #FFFFFF;
+}
+
+.top__cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.top__wrapper {
+    width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.top__inner {
+    width: 520px;
+    padding-top: 16.6%;
+}
+
+.top__title {
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.title__mark {
+    color: #E3B873;
+}
+
+.top__text {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 41px;
+}
+
+.top__btn1 {
+    font-size: 11px;
+    font-style: italic;
+    padding: 20px 42px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.top__btn2 {
+    font-size: 11px;
+    font-style: italic;
+    padding: 19px 23px;
+    background: none;
+    border: 1px solid #FFFFFF;
+}
