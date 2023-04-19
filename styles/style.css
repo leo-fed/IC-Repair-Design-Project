@@ -68,6 +68,10 @@ h1, h2, p {
     border-radius: 2px;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .header__btn {
     font-style: italic;
     text-transform: uppercase;
@@ -98,7 +102,7 @@ h1, h2, p {
 
 .top__inner {
     width: 520px;
-    padding-top: 16.6%;
+    padding-top: 16.3%;
 }
 
 .top__title {
@@ -117,7 +121,7 @@ h1, h2, p {
 .top__text {
     font-size: 22px;
     line-height: 36px;
-    margin-bottom: 41px;
+    margin-bottom: 24px;
 }
 
 .top__btn1 {
@@ -134,4 +138,61 @@ h1, h2, p {
     padding: 19px 23px;
     background: none;
     border: 1px solid #FFFFFF;
+}
+
+@media (max-width: 1300px) {
+    .header__nav, .header__btn {
+        display: none;
+    }
+    
+    .header__container {
+        height: 57px;
+        width: calc(100vw - 36px);
+        padding: 0 18px;
+        margin: 0;
+    }
+
+    .header__tel {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .top {
+        height: fit-content;
+    }
+    .top__wrapper {
+        width: calc(100vw - 36px);
+        padding: 0 18px;
+    }
+
+    .top__inner {
+        width: 338px;
+        padding-top:85px;
+        padding-bottom: 61px;
+    }
+
+    .top__title {
+        font-size: 23px;
+        line-height: 132.83%;
+        padding-right: 38px;
+    }
+
+    .top__text {
+        font-size: 14px;
+        line-height: 135.84%;
+        padding-right: 38px;
+    }
+
+    .conteiner__col {
+        display: block;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .top__btn1 {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
 }
