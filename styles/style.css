@@ -6,9 +6,21 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-h1, h2, p {
+h1, h2, h3 {
     padding: 0;
     margin: 0;
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
 }
 
 .header {
@@ -111,11 +123,8 @@ h1, h2, p {
 }
 
 .top__title {
-    font-family: 'Yeseva One';
     font-size: 40px;
-    font-weight: 400;
     line-height: 53px;
-    text-transform: uppercase;
     margin-bottom: 19px;
 }
 
@@ -145,6 +154,141 @@ h1, h2, p {
     border: 1px solid #FFFFFF;
 }
 
+.projects {
+    background-color: #131313;
+}
+
+.projects__wrapper {
+    box-sizing: border-box;
+    width: 1190px;
+    padding: 107px 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.projects__description {
+    box-sizing: border-box;
+    padding-right: 50px;
+    width: 492px;
+    
+    position: relative;
+}
+
+.projects__title {
+    font-size: 27px;
+    color: #E3B873;
+    max-width: 255px;
+    margin-top: 70px;
+    margin-bottom: 34px;
+}
+
+.projects__text {
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.projects__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 31px;
+}
+
+.cell_title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
+    margin-bottom: 9px;
+}
+
+.cell__text {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.mobile-slider {
+    display: none;
+}
+
+.slider__nav {
+    box-sizing: border-box;
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.slider__button:hover {
+    cursor: pointer;
+}
+
+.slider__button-ar {
+    border: none;
+    background: none;
+    width: 42px;
+    height: 14px;
+    background-image: url(../img/arrow.svg);
+    margin-right: 12px;
+}
+
+.slider__button-ar_reverse {
+    margin-right: 0;
+    margin-left: 12px;
+    transform: rotate(180deg);
+}
+
+.slider__button-pt {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.3);;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.slider__button-pt_active {
+    background-color: #FFFFFF;
+}
+
+.slider__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+    margin-bottom: 45px;
+}
+
+.slider__tab {
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+
+    height: 24px;
+}
+
+.slider__tab_active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.slider__tab:first-child {
+    justify-self: start;
+}
+
+.slider__tab:last-child {
+    justify-self: end;
+}
+
+
+
 @media (max-width: 1300px) {
     .header__nav, .header__btn {
         display: none;
@@ -154,9 +298,14 @@ h1, h2, p {
         min-width: 336px;
     }
 
+    .header {
+        display: flex;
+        justify-content: center;
+    }
     .header__container {
         height: 57px;
         width: 100%;
+        max-width: 580px;
         padding: 0 18px;
         margin: 0;
     }
@@ -169,9 +318,15 @@ h1, h2, p {
     .top {
         height: fit-content;
     }
+    
+    .top__overlay {
+        display: flex;
+        justify-content: center;
+    }
 
     .top__wrapper {
-        max-width: 100%;
+        width: 100%;
+        max-width: 500px;
         margin: 0;
         padding: 0 18px;
     }
@@ -206,6 +361,77 @@ h1, h2, p {
     .top__btn1 {
         margin-right: 0;
         margin-bottom: 25px;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects__wrapper {
+        width: calc(100% - 300px);
+        max-width: 480px;
+        min-width: 300px;
+        margin: 0;
+        padding: 36px 18px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects__description {
+        padding-right: 0px;
+        width: 100%;
+        max-width: 768px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects__title {
+        max-width: 220px;
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        letter-spacing: -0.07em;
+    }
+
+    .projects__text {
+        max-width: 470px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 158.48%;
+    }
+
+    .mobile-slider {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .mobile-slider__img {
+        max-width: 100%;
+    }
+
+    .projects__table {
+        grid-template-rows: 68px 68px;
+        row-gap: 25px;
+    }
+
+    .cell_title {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .cell__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .slider__nav, .projects__slider {
+        display: none;
     }
 }
 
