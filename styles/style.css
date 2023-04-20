@@ -433,7 +433,7 @@ img {
         background-color: #E3B873;
         background-image: url(../img/arrow-mobile.svg);
         background-repeat: no-repeat;
-        background-position:center center;
+        background-position: 55% center;
         border-radius: 50%;
         margin-right: 13px;
     }
