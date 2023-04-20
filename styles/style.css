@@ -318,6 +318,7 @@ img {
     .top {
         height: calc(100vh - 57px);
         max-height: 1080px;
+        min-height: 480px;
     }
     
     .top__overlay {
@@ -475,5 +476,9 @@ img {
 
     .header__container, .top__wrapper {
         padding: 0 10px;
+    }
+
+    .projects__wrapper {
+        padding: 36px 10px;
     }
 }
