@@ -17,8 +17,9 @@ h1, h2, p {
 }
 
 .header__container {
+    box-sizing: border-box;
     height: 83px;
-    width: 1256px;
+    width: 1276px;
     margin: 0 auto;
     padding: 0 10px;
     display: flex;
@@ -97,7 +98,8 @@ h1, h2, p {
 }
 
 .top__wrapper {
-    width: 1170px;
+    box-sizing: border-box;
+    width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -208,6 +210,11 @@ h1, h2, p {
 }
 
 @media (max-width: 320px) {
+
+    body {
+        min-width: 320px;
+    }
+
     .header__container, .top__wrapper {
         padding: 0 10px;
     }
