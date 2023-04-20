@@ -17,7 +17,6 @@ h1, h2, p {
 }
 
 .header__container {
-    box-sizing: border-box;
     height: 83px;
     width: 1256px;
     margin: 0 auto;
@@ -98,7 +97,6 @@ h1, h2, p {
 }
 
 .top__wrapper {
-    box-sizing: border-box;
     width: 1170px;
     padding: 0 10px;
     margin: 0 auto;
