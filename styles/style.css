@@ -402,6 +402,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 33px;
 }
 
@@ -434,6 +435,7 @@ img {
 .request__checkbox {
     width: fit-content;
     margin: 0 auto;
+    margin-top: 33px;
 }
 
 .checkbox__label {
@@ -705,7 +707,7 @@ img {
     .online-control__text {
         color: #FFFFFF;
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 75px;
     }
 
     .request__container {
@@ -715,14 +717,22 @@ img {
     .request__wrapper {
         flex-direction: column;
         width: 100%;
+    }
 
+    .request__checkbox {
+        margin: 0;
+        margin-top: 25px;
+        align-self: start;
+        order: 1;
     }
 
     .request__field {
         width: 100%;
-        margin-top: 60px;
-        margin-bottom: 26px;
     }
+    
+        .request__field:first-child{
+            margin-bottom: 40px;
+        }
 
     .field__label {
         font-size: 13px;
@@ -742,7 +752,8 @@ img {
         }
 
     .request__btn {
-        /**/
+        order: 2;
+        margin-top: 62px;
     }
 
     .checkbox__label {
