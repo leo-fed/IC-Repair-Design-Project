@@ -11,9 +11,11 @@ playBtn.addEventListener('click', function () {
     if (vidEl.paused) {
         vidEl.play();
         playBtn.classList.add('hidden');
+        playBtn.classList.add('hidden_big');
     } else {
         vidEl.pause();
-        vidControls.classList.remove('hidden');
+        playBtn.classList.remove('hidden');
+        playBtn.classList.remove('hidden_big');
     };
     vidOverlay.classList.add('hidden');
 }, false);

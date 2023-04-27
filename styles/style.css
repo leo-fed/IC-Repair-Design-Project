@@ -362,14 +362,16 @@ img {
         content: url(../img/line2.svg);
         position: absolute;
         bottom: -62px;
-        left: calc(50% - 27.5px)
+        left: calc(50% - 27.5px);
     }
 
 
 .hidden{
     opacity: 0;
-    transform: scale(400%);
 }
+    .hidden_big {
+        transform: scale(400%);
+    }
 
 
 .online-control__video {
@@ -728,13 +730,13 @@ img {
             left: calc(50% - 27.5px)
         }
 
-    .preview__img {
-        max-width: 100%;
-    }
-
     .play-btn {
         transform: scale(43%);
         cursor: default;
+    }
+
+    .hidden_big {
+        transform: scale(190%);
     }
 
     .online-control__text {
