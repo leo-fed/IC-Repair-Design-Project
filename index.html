@@ -49,10 +49,12 @@
                         <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                             market we have made happy more than 1000 families</p>
                         <div class="mobile-slider">
-                            <img src="./img/image 2.jpg" alt="interier" class="mobile-slider__img">
+                            <img src="./img/image 2.1.jpg" alt="Rostov-on-Don, Admiral" class="mobile-slider__img mobile-slider__img_active">
+                            <img src="./img/image 2.2.jpg" alt="Rostov-on-Don, Admiral" class="mobile-slider__img">
+                            <img src="./img/image 2.3.jpg" alt="Rostov-on-Don, Admiral" class="mobile-slider__img">
                             <div class="mobile-slider__nav">
-                                <div class="mobile-slider__ar mobile-slider__ar_left"></div>
-                                <div class="mobile-slider__ar"></div>
+                                <button onclick=gom(-1) class="mobile-slider__ar mobile-slider__ar_left"></button>
+                                <button onclick=gom(1) class="mobile-slider__ar"></button>
                             </div>
                         </div>
                         <div class="projects__table">
@@ -75,21 +77,23 @@
                             </div>
                         </div>
                         <div class="slider__nav">
-                            <button class="slider__button-ar slider__button"></button>
-                            <button class="slider__button-pt slider__button-pt_active slider__button"></button>
-                            <button class="slider__button-pt slider__button"></button>
-                            <button class="slider__button-pt slider__button"></button>
-                            <button class="slider__button-ar slider__button slider__button-ar_reverse"></button>
+                            <button onclick=go(-1) class="slider__button-ar slider__button"></button>
+                            <button onclick=goTo(0) class="slider__button-pt slider__button-pt_active slider__button"></button>
+                            <button onclick=goTo(1) class="slider__button-pt slider__button"></button>
+                            <button onclick=goTo(2) class="slider__button-pt slider__button"></button>
+                            <button onclick=go(1) class="slider__button-ar slider__button slider__button-ar_reverse"></button>
                         </div>
                    </div>
                    <div class="projects__slider">
                         <div class="slider__tabs">
-                            <button class="slider__tab slider__tab_active btn">Rostov-on-Don, Admiral</button>
-                            <button class="slider__tab btn">Sochi Thieves</button>
-                            <button class="slider__tab btn">Rostov-on-Don Patriotic</button>
+                            <button onclick=goTo(0) class="slider__tab slider__tab_active btn">Rostov-on-Don, Admiral</button>
+                            <button onclick=goTo(1) class="slider__tab btn">Sochi Thieves</button>
+                            <button onclick=goTo(2) class="slider__tab btn">Rostov-on-Don Patriotic</button>
                         </div>
                         <div class="slider__container">
-                            <img src="./img/image 2.1.jpg" alt="Rostov-on-Don, Admiral" class="slider__img">
+                            <img src="./img/image 2.1.jpg" alt="Rostov-on-Don, Admiral" class="slider__img slider__img_active">
+                            <img src="./img/image 2.2.jpg" alt="Rostov-on-Don, Admiral" class="slider__img">
+                            <img src="./img/image 2.3.jpg" alt="Rostov-on-Don, Admiral" class="slider__img">
                         </div>
                    </div>
             </div>
@@ -98,11 +102,15 @@
             <div class="online-control__wrapper">
                 <h3 class="online-control__title">online control</h3>
                 <div class="online-control__icon"></div>
-                <div class="online-control__video">
-                    <div class="online-control__preview">
-                        <img src="./img/image 6.jpg" alt="Working online." class="preview__img">
+                <div id="online-control__player" class="online-control__player">
+                    <video poster="./img/image 6.jpg" class="online-control__video">
+                        <source src="./vid/video6.mp4" type="video/mp4">
+                        <source src="./vid/video6.webm" type="video/webm">
+                    </video>
+                    <div id="player__overlay" class="player__overlay"></div>
+                    <div id="player__controls" class="player__controls">
+                        <a id="play-btn" class="play-btn"></a>
                     </div>
-                    <button class="play-btn"></button>
                 </div>
                 <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                     Leave a request below and you will receive a link to the broadcast.</p>
@@ -129,5 +137,6 @@
             </div>
          </section>
     </main>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
