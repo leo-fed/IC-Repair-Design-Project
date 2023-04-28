@@ -357,7 +357,7 @@ img {
 
 .online-control__player {
     position: relative;
-    margin-bottom: 98px;
+    margin-bottom: 48px;
 }
 
     .online-control__player::after {
@@ -423,13 +423,31 @@ img {
     width: 580px;
     text-align: center;
     margin: 0 auto;
+    padding-top: 50px;
     margin-bottom: 92px;
+}
+
+@keyframes marked {
+    0% {
+        background-color: #FFFFFF;
+    }
+  
+    50% {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    100% {
+        background-color: #FFFFFF;
+    }
 }
 
 .request__container {
     width: 770px;
     margin: 0 auto;
 }
+    .online-control__text:target + .request__container {
+        animation: 1s marked;
+    }
 
 .request__wrapper {
     display: flex;
@@ -445,10 +463,15 @@ img {
     color: rgba(54, 54, 54, 0.5);
 }
 
+.request__field {
+    width: 241px;
+}
+
 .field__input {
     height: 32px;
-    width: 241px;
+    width: 100%;
     border: none;
+    background: none;
     border-radius: 0;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -596,6 +619,149 @@ img {
 
     margin-left: 31px; 
 }
+
+.request-section {
+    background-image: url(../img/image\ 6.1.png);
+    background-repeat: no-repeat;
+    background-position: top -50px left;
+    margin-bottom: 242px;
+}
+
+.request-section__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages__list {
+    padding: 0;
+    padding-left: 150px;
+    width: 400px;
+}
+
+.stages__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+    .stages__item:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+.item__num {
+    width: 42px;
+    height: 42px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    margin-right: 10px;
+}
+
+.stages__text {
+    max-width: 316px;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #363636;
+}
+
+
+.request-section__request-block {
+    width: 506px;
+}
+
+.request-block__form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 27px 49px;
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__text {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    max-width: 273px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.request-block__field .field__label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.request-block__field {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 48px;
+}
+
+    .request-block__field:nth-child(4) {
+        margin-bottom: 16px;
+    }
+
+    .request-block__field .field__input {
+        background: none;
+        color: #FFFFFF;
+    }
+
+        .request-block__field .field__input::placeholder {
+            color: #FFFFFF;
+        }
+
+.request-block__checkbox {
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.request-block__btn {
+    align-self: flex-end;
+    font-style: italic;
+}
+
+.piggy-bank {
+    display: flex;
+    align-items: center;
+
+    margin-top: 38px;
+    padding-left: 32px;
+}
+
+.piggy-bank__container {
+    width: 72px;
+    height: 72px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+}
+
+.piggy-bank__text {
+    color: #E3B873;
+    width: 200px;
+}
+
+
 
 
 
@@ -950,6 +1116,10 @@ img {
         text-transform: uppercase;
     
         margin-left: 0; 
+    }
+
+    .request-section {
+        display: none;
     }
 
 }

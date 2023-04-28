@@ -23,7 +23,7 @@
             </nav>
             <div class="header__contacts">
                 <a href="tel:+79287683239" class="header__tel" >+7 (928) 768-32-39</a>
-                <button class="header__btn btn">Request a call</button>
+                <a href="#reqest-a-call" class="header__btn btn">Request a call</a>
             </div>
         </div>
     </header>
@@ -114,16 +114,16 @@
                         <a id="play-btn" class="play-btn"></a>
                     </div>
                 </div>
-                <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+                <p class="online-control__text" id="reqest-a-call">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                     Leave a request below and you will receive a link to the broadcast.</p>
                 <div class="request__container">
                     <div class="request__wrapper">
                         <div class="request__field">
-                            <label class="field__label" for="name">Name</p>
+                            <label class="field__label" for="name">Name</label>
                             <input class="field__input" type="text" name="" id="name" placeholder="What is your name:">
                         </div>
                         <div class="request__field">
-                            <label class="field__label" for="tel">Phone</p>
+                            <label class="field__label" for="tel">Phone</label>
                             <input class="field__input" type="tel" name="" id="tel" placeholder="Your phone number:">
                         </div>
                         <button class="request__btn btn" type="submit">Submit</button>
@@ -202,6 +202,61 @@
                             <button class="cards__button btn">from 4000 rub / m2</button>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div class="request-section">
+                <div class="request-section__wrapper">
+                    <div class="request-section__stages">
+                        <ol class="stages__list">
+                            <li class="stages__item">
+                                <div class="item__num">01</div>
+                                <p class="stages__text">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</p>
+                            </li>
+                            <li class="stages__item">
+                                <div class="item__num">02</div>
+                                <p class="stages__text">Free metering</p>
+                            </li>
+                            <li class="stages__item">
+                                <div class="item__num">03</div>
+                                <p class="stages__text">Free consultation</p>
+                            </li>
+                            <li class="stages__item">
+                                <div class="item__num">04</div>
+                                <p class="stages__text">Get a cost estimate and the timing of your future repairs</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="request-section__request-block">
+                        <div class="request-block__form">
+                            <p class="form__text">Leave a request for free departure of the measurer</p>
+                            <div class="request-block__field">
+                                <label class="field__label" for="name">Name</label>
+                                <input class="field__input" type="text" name="" id="name" placeholder="What is your name:">
+                            </div>
+                            <div class="request-block__field">
+                                <label class="field__label" for="tel">Phone</label>
+                                <input class="field__input" type="tel" name="" id="tel" placeholder="Your phone number:">
+                            </div>
+                            <div class="request-block__field">
+                                <label class="field__label" for="email">Email</label>
+                                <input class="field__input" type="email" name="" id="email" placeholder="Your email:">
+                            </div>
+                            <div class="request__checkbox request-block__checkbox">
+                                <label class="checkbox__label">
+                                  <input type="checkbox" class="checkbox">
+                                  <span class="fake"></span>
+                                  <span class="checkbox__text">I agree to the processing of personal data.</span>
+                                </label>
+                            </div>
+                            <button class="request__btn request-block__btn btn" type="submit">Call the measurer</button>
+                        </div>
+                        <div class="piggy-bank">
+                            <div class="piggy-bank__container">
+                                <img src="./img/piggy-bank.svg" alt="" class="piggy-bank__img">
+                            </div>
+                            <p class="piggy-bank__text">Help save 10 - 20% of the cost of materials</p>
+                        </div>
+                    </div>
                 </div>
             </div>
          </section>
