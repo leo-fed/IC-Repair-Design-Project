@@ -13,12 +13,12 @@
             <a href="index.html" class="header__logo logo">IC "Repair Design Project"</a>
             <nav class="header__nav">
                 <ul class="menu">
-                    <li class="menu__item"><a href="" class="menu__links menu__links_active">HOME</a></li>
-                    <li class="menu__item"><a href="" class="menu__links">PROJECTS</a></li>
-                    <li class="menu__item"><a href="" class="menu__links">MEASUREMENT</a></li>
-                    <li class="menu__item"><a href="" class="menu__links">TEAM</a></li>
-                    <li class="menu__item"><a href="" class="menu__links">REVIEWS</a></li>
-                    <li class="menu__item"><a href="" class="menu__links">CONTACTS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__links menu__links_active">HOME</a></li>
+                    <li class="menu__item"><a href="#projects" class="menu__links">PROJECTS</a></li>
+                    <li class="menu__item"><a href="#types" class="menu__links">MEASUREMENT</a></li>
+                    <li class="menu__item"><a href="#" class="menu__links">TEAM</a></li>
+                    <li class="menu__item"><a href="#" class="menu__links">REVIEWS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__links">CONTACTS</a></li>
                 </ul>
             </nav>
             <div class="header__contacts">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </section>
-         <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects__wrapper">
                    <div class="projects__description">
                         <h3 class="projects__title">Completed projects</h3>
@@ -97,8 +97,8 @@
                         </div>
                    </div>
             </div>
-         </section>
-         <section class="online-control">
+        </section>
+        <section class="online-control">
             <div class="online-control__wrapper">
                 <h3 class="online-control__title section__title">online control</h3>
                 <div class="online-control__icon section__icon">
@@ -137,9 +137,9 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <section class="types">
+        <section class="types" id="types">
             <div class="types__wrapper">
                 <h3 class="types__title section__title">TYPES OF REPAIR</h3>
                 <div class="types__icon section__icon">
@@ -259,7 +259,66 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery__wrapper">
+                <div class="gallery__nav-container">
+                    <h3 class="gallery__title title">We realize your wildest fantasies</h3>
+                    <nav class="gallery__nav">
+                        <ul class="gallery__list">
+                            <li class="gallery__item">
+                                <button class="gallery__button btn gallery__button_active">American classic</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Empire</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Classical</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Loft</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Minimalism</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Provence</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Romanticism</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Scandinavian style</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Mediterranean style</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">High tech</button>
+                            </li>
+                            <li class="gallery__item">
+                                <button class="gallery__button btn">Eclecticism</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="gallery__gallery-slider">
+                    <div class="gallery-slider__col">
+                        <img src="./img/image 5(1).jpg" alt="" class="gallery-slider__img gallery-slider__img_active">
+                        <img src="./img/image 5(3).jpg" alt="" class="gallery-slider__img">
+                    </div>
+                    <div class="gallery-slider__col">
+                        <img src="./img/image 5.jpg" alt="" class="gallery-slider__img">
+                        <img src="./img/image 5(2).jpg" alt="" class="gallery-slider__img">
+                    </div>
+                    <div class="mobile-slider__nav">
+                        <button onclick=gom2(-1) class="mobile-slider__ar mobile-slider__ar_left"></button>
+                        <button onclick=gom2(1) class="mobile-slider__ar"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./scripts/script.js"></script>
 </body>
