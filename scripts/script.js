@@ -19,12 +19,64 @@ window.addEventListener('scroll', () => {
 });
 
 //header nav
-let nav = document.getElementById('block');
+let atop = document.querySelector('a[href*="top"]');
+let top1 = document.getElementById('top1');
+let aprojects = document.querySelector('a[href*="projects"]');
+let projects = document.getElementById('projects');
+let atypes = document.querySelector('a[href*="types"]');
+let types = document.getElementById('types');
+let areviews = document.querySelector('a[href*="reviews"]');
+let reviews = document.getElementById('reviews');
+let acontacts = document.querySelector('a[href*="contacts"]');
+let contacts = document.getElementById('contacts');
 
 document.addEventListener('scroll', function() {
-  let posTop = elem.getBoundingClientRect().top;
-  elem.classList.toggle('visible', posTop <= 0);
+  let top1Top = top1.getBoundingClientRect().top;
+  let top1Bot = top1.getBoundingClientRect().bottom;
+  
+  let projectsTop = projects.getBoundingClientRect().top;
+  let projectsBot = projects.getBoundingClientRect().bottom;
+
+  let typesTop = types.getBoundingClientRect().top;
+  let typesBot = types.getBoundingClientRect().bottom;
+
+  let reviewsTop = reviews.getBoundingClientRect().top;
+  let reviewsBot = reviews.getBoundingClientRect().bottom;
+
+  let contactsTop = contacts.getBoundingClientRect().top;
+  let contactsBot = contacts.getBoundingClientRect().bottom;
+
+  if (top1Top <= 83 && projectsTop >= 0 && !atop.classList.contains('menu__links_active')) {
+    atop.classList.add('menu__links_active');
+  } else if (projectsTop < 0 && atop.classList.contains('menu__links_active')) {
+    atop.classList.remove('menu__links_active');
+  };
+  //
+  if (projectsTop <= 0 && typesTop >= 0 && !aprojects.classList.contains('menu__links_active')) {
+    aprojects.classList.add('menu__links_active');
+  } else if ((typesTop <= 0 || projectsTop >= 0) && aprojects.classList.contains('menu__links_active')) {
+    aprojects.classList.remove('menu__links_active');
+  };
+  //
+  if (typesTop <= 0 && reviewsTop >= 0 && !atypes.classList.contains('menu__links_active')) {
+    atypes.classList.add('menu__links_active');
+  } else if ((reviewsTop < 0 || typesTop >= 0) && atypes.classList.contains('menu__links_active')) {
+    atypes.classList.remove('menu__links_active');
+  };
+  //
+  if (reviewsTop <= 0 && contactsTop >= 0 && !areviews.classList.contains('menu__links_active')) {
+    areviews.classList.add('menu__links_active');
+  } else if ((contactsTop < 0 || reviewsTop >= 0) && areviews.classList.contains('menu__links_active')) {
+    areviews.classList.remove('menu__links_active');
+  };
+  //
+  if (contactsTop <= 0 && contactsBot >= 0 && !acontacts.classList.contains('menu__links_active')) {
+    acontacts.classList.add('menu__links_active');
+  } else if (contactsTop > 0 && acontacts.classList.contains('menu__links_active')) {
+    acontacts.classList.remove('menu__links_active');
+  };
 });
+
 
 
 //player

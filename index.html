@@ -17,8 +17,8 @@
                     <li class="menu__item"><a href="#projects" class="menu__links">PROJECTS</a></li>
                     <li class="menu__item"><a href="#types" class="menu__links">MEASUREMENT</a></li>
                     <li class="menu__item"><a href="#" class="menu__links">TEAM</a></li>
-                    <li class="menu__item"><a href="#" class="menu__links">REVIEWS</a></li>
-                    <li class="menu__item"><a href="#" class="menu__links">CONTACTS</a></li>
+                    <li class="menu__item"><a href="#reviews" class="menu__links">REVIEWS</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__links">CONTACTS</a></li>
                 </ul>
             </nav>
             <div class="header__contacts">
@@ -28,22 +28,22 @@
         </div>
     </header>
     <main>
-        <section class="top">
+        <section class="top" id="top1">
             <div class="top__overlay">
-                <div class="top__wrapper">
+                <div class="top__wrapper mobile-wrapper">
                     <div class="top__inner">
                         <h1 class="top__title">Turnkey Repair in the city of <span class="title__mark">Rostov-on-Don</span></h1>
                         <p class="top__text">Get ready-made turnkey repairs on time<br>
                             with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work</p>
-                        <button class="top__btn1 btn">CALCULATE THE COST</button>
-                        <button class="top__btn2 btn">SUBMIT YOUR APPLICATION</button>
+                        <a href="#calculate" class="top__btn1 btn">CALCULATE THE COST</a>
+                        <a href="#calculate" class="top__btn2 btn">SUBMIT YOUR APPLICATION</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="projects" id="projects">
-            <div class="projects__wrapper">
+            <div class="projects__wrapper mobile-wrapper">
                    <div class="projects__description">
                         <h3 class="projects__title">Completed projects</h3>
                         <p class="projects__text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
@@ -99,7 +99,7 @@
             </div>
         </section>
         <section class="online-control">
-            <div class="online-control__wrapper">
+            <div class="online-control__wrapper mobile-wrapper">
                 <h3 class="online-control__title section__title">online control</h3>
                 <div class="online-control__icon section__icon">
                     <img src="./img/camera.svg" alt="" class="icon__img">
@@ -140,7 +140,7 @@
         </section>
 
         <section class="types" id="types">
-            <div class="types__wrapper">
+            <div class="types__wrapper mobile-wrapper">
                 <h3 class="types__title section__title">TYPES OF REPAIR</h3>
                 <div class="types__icon section__icon">
                     <img src="./img/tools.svg" alt="" class="icon__img">
@@ -204,7 +204,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="request-section">
+            <div class="request-section"  id="calculate">
                 <div class="request-section__wrapper">
                     <div class="request-section__stages">
                         <ol class="stages__list">
@@ -262,7 +262,7 @@
         </section>
 
         <section class="gallery">
-            <div class="gallery__wrapper">
+            <div class="gallery__wrapper mobile-wrapper">
                 <div class="gallery__nav-container">
                     <h3 class="gallery__title title">We realize your wildest fantasies</h3>
                     <nav class="gallery__nav">
@@ -319,8 +319,8 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
-            <div class="reviews__wrapper">
+        <section class="reviews" id="reviews">
+            <div class="reviews__wrapper mobile-wrapper">
                 <h3 class="reviews__title section__title">our clients</h3>
                 <div class="rewiews__icon section__icon">
                     <img src="./img/handshake.svg" alt="" class="icon__img">
@@ -391,7 +391,72 @@
                 </div>
             </div>
         </section>
+        <section class="contacts">
+            <div class="contacts__wrapper mobile-wrapper">
+                <form class="contacts__question-form" id="contacts">
+                    <h3 class="question-form__title title">have any questions?</h3>
+                    <div class="question-form__container">
+                        <div class="question-form__field request__field">
+                            <label class="field__label" for="name">Name</label>
+                            <input class="field__input" type="text" name="" id="name" placeholder="What is your name:">
+                        </div>
+                        <div class="question-form__field request__field">
+                            <label class="field__label" for="tel">Phone</label>
+                            <input class="field__input" type="tel" name="" id="tel" placeholder="Your phone number:">
+                        </div>
+                    </div>
+                    <div class="question-form__field request__field">
+                        <label class="field__label" for="question">Question</label>
+                        <input class="field__input" type="text" name="" id="question" placeholder="I want to know:">
+                    </div>
+                    <div class="question-form__checkbox request__checkbox">
+                        <label class="checkbox__label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake"></span>
+                        <span class="checkbox__text">I agree to the processing of personal data.</span>
+                        </label>
+                    </div>
+                    <button class="question-form__btn request__btn btn" type="submit">Submit</button>
+                </form>
+                <address class="contacts__address">
+                    <p class="address__text">Rostov-on-Don, Nansen St., 239 Shopping Center</p>
+                    <p class="address__text">Decorum Tel a.address <a href="tel:+79287683229" class="address__tel">+7 (928) 768 32 29</a></p>
+                    <div class="contacts__links">
+                        <a href="mailto:mail@example.com" class="contacts__mail contacts__link">
+                            <img src="./img/mail.svg" alt="" class="link__icon">
+                        </a>
+                        <a href="https://example.com" target="_blank" class="contacts__inst contacts__link">
+                            <img src="./img/instagram.svg" alt="" class="link__icon">
+                        </a>
+                    </div>
+                    <div class="contacts__map">
+                        <div class="map__inner">
+                            <img src="./img/image 7(1).jpg" alt="Map." class="map__img">
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container header__container">
+            <a href="index.html" class="header__logo logo">IC "Repair Design Project"</a>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#top" class="menu__links">HOME</a></li>
+                    <li class="menu__item"><a href="#projects" class="menu__links">PROJECTS</a></li>
+                    <li class="menu__item"><a href="#types" class="menu__links">MEASUREMENT</a></li>
+                    <li class="menu__item"><a href="#" class="menu__links">TEAM</a></li>
+                    <li class="menu__item"><a href="#reviews" class="menu__links">REVIEWS</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__links">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a href="tel:+79287683239" class="header__tel" >+7 (928) 768-32-39</a>
+                <a href="#reqest-a-call" class="header__btn btn">Request a call</a>
+            </div>
+        </div>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
