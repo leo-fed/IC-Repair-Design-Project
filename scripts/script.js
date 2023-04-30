@@ -1,34 +1,14 @@
-//header
-let lastScroll = 0;
-const defaultOffset = 200;
-const header = document.querySelector('.header');
-
-const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
-const containHide = () => header.classList.contains('header_hide');
-
-window.addEventListener('scroll', () => {
-    if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-        //scroll down
-        header.classList.add('header_hide');
-    }
-    else if(scrollPosition() < lastScroll && containHide()){
-        //scroll up
-        header.classList.remove('header_hide');        
-    }
-    lastScroll = scrollPosition();
-});
-
 //header nav
-let atop = document.querySelector('a[href*="top"]');
-let top1 = document.getElementById('top1');
-let aprojects = document.querySelector('a[href*="projects"]');
-let projects = document.getElementById('projects');
-let atypes = document.querySelector('a[href*="types"]');
-let types = document.getElementById('types');
-let areviews = document.querySelector('a[href*="reviews"]');
-let reviews = document.getElementById('reviews');
-let acontacts = document.querySelector('a[href*="contacts"]');
-let contacts = document.getElementById('contacts');
+const atop = document.querySelector('a[href*="top"]');
+const top1 = document.getElementById('top1');
+const aprojects = document.querySelector('a[href*="projects"]');
+const projects = document.getElementById('projects');
+const atypes = document.querySelector('a[href*="types"]');
+const types = document.getElementById('types');
+const areviews = document.querySelector('a[href*="reviews"]');
+const reviews = document.getElementById('reviews');
+const acontacts = document.querySelector('a[href*="contacts"]');
+const contacts = document.getElementById('contacts');
 
 document.addEventListener('scroll', function() {
   let top1Top = top1.getBoundingClientRect().top;
