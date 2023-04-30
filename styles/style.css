@@ -152,6 +152,7 @@ img {
 .top__btn1, .top__btn2 {
     font-size: 11px;
     font-style: italic;
+    text-decoration: none;
 }
 
 .top__btn1 {
